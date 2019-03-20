@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HouseSalesCoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="kNk-K7-Wg5">
+                                <rect key="frame" x="14" y="387" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="JU6-8O-UIL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changesValuesProperty:" destination="BYZ-38-t0r" eventType="valueChanged" id="caT-ST-0Dj"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-4L-Vfc">
+                                <rect key="frame" x="14" y="499" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="eji-fF-rbb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changesValuesProperty:" destination="BYZ-38-t0r" eventType="valueChanged" id="WXd-TA-nYS"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1750" minValue="500" maxValue="3000" translatesAutoresizingMaskIntoConstraints="NO" id="BMq-1m-OGq">
+                                <rect key="frame" x="14" y="608" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="OCC-U8-jPH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changesValuesProperty:" destination="BYZ-38-t0r" eventType="valueChanged" id="xqs-01-NAM"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Bathroom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qep-pc-PkI">
+                                <rect key="frame" x="16" y="435" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VRl-cH-cha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square Feet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAP-Q9-aER">
+                                <rect key="frame" x="16" y="547" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sIl-dc-uYk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost of ownership is ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5M-g2-KL9">
+                                <rect key="frame" x="16" y="37" width="343" height="202"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5M-ti-dOP">
+                                <rect key="frame" x="16" y="311" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RXR-AJ-G9W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="i9j-jc-xeV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E5M-ti-dOP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0VK-qf-48v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BMq-1m-OGq" secondAttribute="trailing" constant="16" id="37d-YI-78Z"/>
+                            <constraint firstItem="v5M-g2-KL9" firstAttribute="leading" secondItem="kNk-K7-Wg5" secondAttribute="leading" id="8PR-jw-djt"/>
+                            <constraint firstItem="v5M-g2-KL9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="9hP-bU-dPT"/>
+                            <constraint firstItem="dAP-Q9-aER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A0F-Y1-mrU"/>
+                            <constraint firstItem="qep-pc-PkI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A8K-D5-8mf"/>
+                            <constraint firstItem="E5M-ti-dOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ech-Us-LsM"/>
+                            <constraint firstItem="BMq-1m-OGq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Em7-uX-gJP"/>
+                            <constraint firstItem="E5M-ti-dOP" firstAttribute="leading" secondItem="kNk-K7-Wg5" secondAttribute="leading" id="Hip-6w-IGu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qep-pc-PkI" secondAttribute="trailing" constant="16" id="Hqj-e2-6cn"/>
+                            <constraint firstItem="BMq-1m-OGq" firstAttribute="top" secondItem="dAP-Q9-aER" secondAttribute="bottom" constant="16" id="HyX-nx-DlQ"/>
+                            <constraint firstItem="qep-pc-PkI" firstAttribute="top" secondItem="kNk-K7-Wg5" secondAttribute="bottom" constant="19" id="NAp-Is-eFz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNk-K7-Wg5" secondAttribute="trailing" constant="16" id="OxH-Jw-Uzx"/>
+                            <constraint firstItem="P4F-4L-Vfc" firstAttribute="top" secondItem="qep-pc-PkI" secondAttribute="bottom" constant="19" id="SUo-Dw-i1L"/>
+                            <constraint firstItem="kNk-K7-Wg5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XoS-6P-rPi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BMq-1m-OGq" secondAttribute="bottom" constant="30" id="cns-RQ-1ou"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dAP-Q9-aER" secondAttribute="trailing" constant="16" id="gXT-F5-YrB"/>
+                            <constraint firstItem="kNk-K7-Wg5" firstAttribute="top" secondItem="E5M-ti-dOP" secondAttribute="bottom" constant="31" id="hnX-qv-tPY"/>
+                            <constraint firstItem="kNk-K7-Wg5" firstAttribute="top" secondItem="v5M-g2-KL9" secondAttribute="bottom" constant="148" id="jkR-HS-6QN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5M-ti-dOP" secondAttribute="trailing" constant="16" id="kRw-bd-CxH"/>
+                            <constraint firstItem="E5M-ti-dOP" firstAttribute="trailing" secondItem="kNk-K7-Wg5" secondAttribute="trailing" id="oWp-sy-I5N"/>
+                            <constraint firstItem="dAP-Q9-aER" firstAttribute="top" secondItem="P4F-4L-Vfc" secondAttribute="bottom" constant="19" id="oid-Ac-bTI"/>
+                            <constraint firstItem="P4F-4L-Vfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qeG-Me-1ov"/>
+                            <constraint firstItem="v5M-g2-KL9" firstAttribute="trailing" secondItem="kNk-K7-Wg5" secondAttribute="trailing" id="rJe-TR-E89"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P4F-4L-Vfc" secondAttribute="trailing" constant="16" id="rXe-Nu-cKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="costOfOwnership" destination="v5M-g2-KL9" id="oGU-9O-bz6"/>
+                        <outlet property="numberBathrom" destination="qep-pc-PkI" id="4Ez-Gf-fIc"/>
+                        <outlet property="numberRoom" destination="E5M-ti-dOP" id="i9z-FZ-fdu"/>
+                        <outlet property="sliderBathroom" destination="P4F-4L-Vfc" id="Yez-8q-Aie"/>
+                        <outlet property="sliderRoom" destination="kNk-K7-Wg5" id="scj-8Z-2di"/>
+                        <outlet property="sliderSquareFeet" destination="BMq-1m-OGq" id="tWQ-rq-fE2"/>
+                        <outlet property="squareFeet" destination="dAP-Q9-aER" id="51e-SE-fVl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
